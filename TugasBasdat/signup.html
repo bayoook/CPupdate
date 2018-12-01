@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubesBasdat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.0.0/quill.snow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBow8OLrvi8vkxaPydcDRfOcWW4aDwEl5w",
+    authDomain: "cpupdate-bayok.firebaseapp.com",
+    databaseURL: "https://cpupdate-bayok.firebaseio.com",
+    projectId: "cpupdate-bayok",
+    storageBucket: "cpupdate-bayok.appspot.com",
+    messagingSenderId: "228343906855"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body style="background-color:rgb(40,45,50);"><!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBow8OLrvi8vkxaPydcDRfOcWW4aDwEl5w",
+    authDomain: "cpupdate-bayok.firebaseapp.com",
+    databaseURL: "https://cpupdate-bayok.firebaseio.com",
+    projectId: "cpupdate-bayok",
+    storageBucket: "cpupdate-bayok.appspot.com",
+    messagingSenderId: "228343906855"
+  };
+  firebase.initializeApp(config);
+</script>
+    <div>
+        <div class="header-blue" style="padding-bottom:20px;color:rgb(0,0,0);">
+            <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search" style="background-color:rgba(40,45,50,0.91);padding:5px;">
+                <div class="container-fluid"><a class="navbar-brand" style="color:rgb(240,240,240);">CPu (Computer Part Update)</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="home.html">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="news.html">News</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="review.html">Review</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active">Forum</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Part Computer&nbsp;</a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="part.html?p=Processor">Processor</a><a class="dropdown-item" role="presentation" href="#">Motherboard</a><a class="dropdown-item" role="presentation" href="#">Hardisk</a>
+                                    <a
+                                        class="dropdown-item" role="presentation" href="#">SSD</a><a class="dropdown-item" role="presentation" href="#">RAM</a><a class="dropdown-item" role="presentation" href="#">VGA</a><a class="dropdown-item" role="presentation" href="#">PSU</a><a class="dropdown-item"
+                                            role="presentation" href="#">Casing</a><a class="dropdown-item" role="presentation" href="#">LCD</a><a class="dropdown-item" role="presentation" href="#">Optical Drive</a><a class="dropdown-item" role="presentation"
+                                            href="#">Accessories</a><a class="dropdown-item" role="presentation" href="#">Software &amp; OS</a></div>
+                            </li>
+                        </ul><a class="btn btn-link btn-sm" role="button" href="#myModal" data-bs-hover-animate="swing" id="logBut" style="color:rgb(128,210,108);background-color:transparent;display:none;" data-toggle="modal" data-target="#myModal">Login</a>
+                        <span
+                            class="navbar-text">&nbsp;&nbsp; </span><a class="btn btn-light action-button" role="button" href="" data-bs-hover-animate="jello" id="regBut" style="padding:5px;padding-right:10px;padding-left:10px;display:none;">Sign Up</a></div>
+                </div>
+            </nav>
+            <div style="padding:20px;">
+                <div class="container border rounded" style="background-color:#ffffff;margin-top:20px;color:rgb(0,0,0);max-width:400px;padding:20px;">
+                    <div class="col border-bottom" style="margin-bottom:15px;padding-bottom:4px;">
+                        <h2 class="text-center"><strong>Sign Up</strong></h2>
+                    </div>
+                    <div id="regForm" style="padding-bottom:10px;display:block;">
+                        <div class="col" style="margin-bottom:10px;">
+                            <h5>Email</h5><input type="email" id="emailRegist" class="rounded border-dark" style="padding:5px;width:100%;padding-left:10px;background-color:rgb(255,255,255);"></div>
+                        <div class="col" style="margin-bottom:10px;">
+                            <h5>Password</h5><input type="password" id="passRegist" class="rounded border-dark" style="padding:5px;width:100%;padding-left:10px;background-color:rgb(255,255,255);"></div>
+                        <div class="col" style="margin-bottom:10px;">
+                            <h5>Confirmation Password</h5><input type="password" id="cPassRegist" class="rounded border-dark" style="padding:5px;width:100%;padding-left:10px;background-color:rgb(255,255,255);"></div>
+                        <div class="col border-top" style="padding-top:23px;margin-top:25px;"><button class="btn btn-secondary btn-block" type="button" style="font-size:24px;" onclick="regist()">Sign Up</button></div>
+                    </div>
+                    <div id="butRegForm" style="padding:0px 15px;"><button class="btn btn-primary btn-block" type="button" style="margin-bottom:8px;" onclick="emailBut()">Sign Up With Email<i class="fa fa-envelope float-left" style="font-size:18px;margin-top:2px;"></i></button>
+<script>
+    function emailBut(){
+        regForm = document.getElementById("regForm");
+        regBut1 = document.getElementById("butRegForm");
+        regForm.style.display = "block";
+        regBut1.style.display = "none";
+        
+    }
+</script><button class="btn btn-primary btn-block" type="button" style="margin-bottom:8px;background-color:#DB4437;" onclick="googleLog()">Sign Up With Google<i class="fa fa-google float-left" style="margin:0px;margin-top:5px;font-size:18px;"></i></button>
+<script>
+    
+</script><button class="btn btn-primary btn-block" type="button" style="margin-bottom:8px;background-color:#3B5998;" onclick="fblog()">Sign Up With Facebook<i class="fa fa-facebook float-left" style="margin:0px;margin-top:5px;font-size:18px;"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="myModal">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" style="padding:11px;padding-top:0px;"><a class="btn btn-light disabled btn-block" role="button" href="#" style="background-color:transparent;padding-top:0px;"><i class="fa fa-user-circle d-block justify-content-center" style="font-size:100px;color:rgb(0,0,0);margin-top:6px;padding:11px;"></i></a>
+                        <div
+                            style="padding:1px;background-color:#000000;height:188px;">
+                            <div class="container" style="padding:13px;background-color:#ffffff;margin:0px;height:186px;">
+                                <div class="input-group" style="margin-bottom:11px;">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope d-flex m-auto" style="font-size:16px;"></i></span></div>
+                                    <div class="input-group-append"></div><input class="form-control" type="text" placeholder="Email" id="email"></div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text" style="width:42px;"><i class="fa fa-lock d-flex m-auto" style="font-size:20px;"></i></span></div>
+                                    <div class="input-group-append"></div><input class="form-control" type="password" placeholder="Password" id="password"></div>
+                                <div class="row" style="margin-top:11px;">
+                                    <div class="col"><button class="btn btn-primary btn-block" type="button" id="btnLogin" style="margin-bottom:5px;" onclick="loginButton()">Login</button>
+<script>
+    
+</script>
+                                        <div class="form-check" style="color:rgb(0,0,0);"><input class="form-check-input float-left" type="checkbox" id="formCheck-1"><label class="form-check-label float-left" for="formCheck-1" style="color:rgb(0,0,0);font-size:13px;">Remember Me</label></div>
+                                    </div>
+                                    <div class="col"><a class="btn btn-secondary btn-block" role="button" href="signup.html" id="btnSignup" style="margin-bottom:5px;">Signup</a><a class="float-right" href="#" style="font-size:12px;">Forgot Password?</a></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="padding:11px;">
+                    <div class="container" style="padding:0px;"><button class="btn btn-primary btn-block" type="button" style="margin-bottom:8px;background-color:#DB4437;" onclick="googleLog()">Sign In With Google<i class="fa fa-google float-left" style="margin:0px;margin-top:5px;font-size:18px;"></i></button>
+<script>
+    
+</script><button class="btn btn-primary btn-block" type="button" style="margin-bottom:8px;background-color:#3B5998;" onclick="fblog()">Sign In With Facebook<i class="fa fa-facebook float-left" style="margin:0px;margin-top:5px;font-size:18px;"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><script>
+    document.getElementById("regForm").style.display="none";
+</script>
+    <div data-aos="zoom-in" class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Company Name © 2017</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
